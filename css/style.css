@@ -14,7 +14,7 @@ a{ text-decoration: none;}
 body{
   font-family: 'Nanum Gothic', 'Open Sans', '맑은 고딕', sans-serif;
   color: #666;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 h1{
   font-size: 28px;
@@ -105,8 +105,41 @@ p{
 /* 스패셜 커피 브랜드 섹션 */
 #brand{
   text-align: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  overflow: hidden;
 }
 #brand h2, #brand p{
   padding-left: 295px;
   padding-right: 295px;
+}
+#brand p{ margin-bottom: 100px;}
+#brand .product{
+
+}
+#brand .product li{
+  /* 그리드 시스템 공식 */
+  /*  1200(폭) - (중간 여백 = 칼럼수-1) / 3(컬럼수) */
+  width: 386px;
+  float: left;
+  margin-right: 20px;
+}
+#brand .product li:last-child{
+  margin-right: 0;
+}
+#brand .product img{
+  display: block;
+  margin-bottom: 1em;
+}
+#brand .product .name{
+  display: block;
+  font-weight: bold;
+  font-family: 'Noto Serif', serif;
+}
+#brand .product .price{
+  margin-top: 1em;
+  font-size: 13px;
+}
+#brand .product .price strong{
+  color: #ca5c43;
 }
