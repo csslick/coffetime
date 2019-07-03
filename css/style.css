@@ -13,7 +13,7 @@ ul{ list-style-type: none;}
 a{ text-decoration: none;}
 body{
   /* 다국어 */
-  font-family: 'Open Sans', 'Nanum Gothic', '맑은 고딕', sans-serif;
+  font-family: 'Nanum Gothic', '맑은 고딕', sans-serif;
   color: #666;
   overflow-x: hidden;
 }
@@ -22,7 +22,7 @@ h1{
   /* font-family: 'Open Sans', sans-serif; */
 }
 h2{
-  font-family: 'Noto Serif', serif;
+  font-family: 'Noto Serif KR', 'Nanum Myeongjo', serif;
   font-size: 28px;
   margin-top: 0.5em;
   margin-bottom: 0.5em;
@@ -37,7 +37,7 @@ p{
 .container{
   position: relative;
   width: 1200px;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   margin: 0 auto;
 }
 
@@ -58,18 +58,20 @@ p{
 }
 #main-header nav ul li{
   display: inline-block;
-  margin-left: 0.5em;
-  margin-right: 0.5em;
+  margin-left: 1em;
+  margin-right: 1em;
 }
 #main-header nav ul li:last-child{
   margin-right: 0;
 }
 /* https://jsfiddle.net/tailofmoon/b7orLmqv/ */
 #main-header nav ul li a{ color: #fff;}
-#main-header nav ul li a:hover{ 
+#main-header nav ul li a:hover,
+#main-header nav ul li label:hover{ 
   /* color: #ca5c43; */
   color: rgba(255,255,255, 0.8);
 }
+
 
 /* 메인 비주얼 */
 #main-visual{
@@ -84,8 +86,9 @@ p{
 #main-visual h2{
   margin-top: 1em;
   margin-bottom: 1em;
-  font-family: 'Nanum Gothic', 'Open Sans', '맑은 고딕', sans-serif;
+  font-family: 'Nanum Gothic', '맑은 고딕', sans-serif;
   font-size: 60px;
+  color: #fff;
 }
 #main-visual p{
   margin-bottom: 2em;
@@ -137,7 +140,7 @@ p{
 #brand .product .name{
   display: block;
   font-weight: bold;
-  font-family: 'Noto Serif', serif;
+  font-family: 'Noto Serif KR', 'Nanum Myeongjo', serif;
 }
 #brand .product .price{
   margin-top: 1em;
@@ -203,6 +206,9 @@ p{
   background: #fff;
   float: left; 
 }
+#post article h2{
+  /* font-family: 'Nanum Myeongjo', serif; */
+}
 #post .btn-more{ 
   display: inline-block;
   margin-top: 1em;
@@ -223,6 +229,12 @@ p{
 }
 #main-footer .sns-icon{
   margin-bottom: 1em;
+}
+#main-footer .sns-icon a{
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+  font-size: 24px;
+  color: #000;
 }
 #main-footer .footer-menu{
   margin-bottom: 1em;
