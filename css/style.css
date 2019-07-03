@@ -43,9 +43,17 @@ p{
 
 /* 헤더 */
 #main-header{
-  background: #000;
+  background: transparent;
   color: #fff;
   height: 60px;
+  position: fixed;
+  left: 0; top: 0;
+  width: 100%;
+  z-index: 99;
+}
+#main-header.bg-b{
+  background: #000;
+  color: #fff;
 }
 
 #main-header h1{
