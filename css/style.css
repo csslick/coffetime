@@ -194,16 +194,48 @@ p{
 }
 #post article:first-child{
   width: 590px;
-  background: #ccc;
+  background: #fff;
   float: left;
   margin-right: 20px;  
 }
 #post article:last-child{
   width: 590px;
-  background: #ccc;
+  background: #fff;
   float: left; 
 }
 #post .btn-more{ 
-  display: block;
+  display: inline-block;
   margin-top: 1em;
+  color: #ca5c43;
+  background-color: transparent;
+  padding-left: 0;
+  text-decoration: underline;
+}
+#post article h2{
+  font-size: 24px;
+  color: #333;
+}
+
+#main-footer{
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+#main-footer .sns-icon{
+  margin-bottom: 1em;
+}
+#main-footer .footer-menu{
+  margin-bottom: 1em;
+}
+#main-footer .footer-menu a{
+  margin-left: 1em;
+  margin-right: 1em;
+  color: #666;
+}
+#main-footer .address p{
+  margin-bottom: 1em;
+  font-size: 14px;
+}
+#main-footer .copy{
+  font-size: 14px;
 }
