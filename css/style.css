@@ -64,12 +64,13 @@ p{
   position: absolute;
   right: 0; top: 22px;
 }
+#main-header nav ul { display: inline-block;}
 #main-header nav ul li{
   display: inline-block;
-  margin-left: 1em;
-  margin-right: 1em;
+  margin-left: 0.8em;
+  margin-right: 0.8em;
 }
-#main-header nav ul li:last-child{
+#main-header nav ul.icon-menu li:last-child{
   margin-right: 0;
 }
 /* https://jsfiddle.net/tailofmoon/b7orLmqv/ */
@@ -81,11 +82,11 @@ p{
 }
 
 /* 검색창 액션 - focus시 창이 열림 */
-#main-menu #s{
+#s{
   width: 0;
   opacity: 0;
 }
-#main-menu #s:focus{
+#s:focus{
   width: 10em;
   opacity: 1;
 }
