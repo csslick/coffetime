@@ -89,6 +89,8 @@ p{
   background: #ccc;
   background-image: url('../images/visual.jpg');
   background-size: cover;
+  /* 배경고정효과(패럴랙스 배경) */
+  background-attachment: fixed;
   color: #fff;
   text-align: center;
 }
