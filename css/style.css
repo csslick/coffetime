@@ -12,18 +12,21 @@
 ul{ list-style-type: none;}
 a{ text-decoration: none;}
 body{
+  /* 다국어 */
   font-family: 'Open Sans', 'Nanum Gothic', '맑은 고딕', sans-serif;
   color: #666;
   overflow-x: hidden;
 }
 h1{
   font-size: 28px;
+  /* font-family: 'Open Sans', sans-serif; */
 }
 h2{
   font-family: 'Noto Serif', serif;
   font-size: 28px;
   margin-top: 0.5em;
   margin-bottom: 0.5em;
+  color: #ca5c43
 }
 p{
   font-size: 16px;
@@ -142,4 +145,65 @@ p{
 }
 #brand .product .price strong{
   color: #ca5c43;
+}
+
+/* 배너 섹션 */
+#banner{
+  text-align: center;
+  padding-bottom: 100px;
+  overflow: hidden;  
+}
+#banner .container{ border: none;}
+#banner .coffe-product{
+  width: 590px; height: 400px;
+  background: #ccc;
+  background-image: url('http://placeimg.com/590/400/tech');
+  float: left;
+  margin-right: 20px;
+}
+#banner .contact-us{
+  width: 590px; height: 400px;
+  background: #ccc;
+  background-image: url('http://placeimg.com/590/400/people');
+  float: left;
+}
+#banner .coffe-product h3,
+#banner .contact-us{
+  font-size: 42px;
+  padding-top: 160px;
+  color: #fff;
+}
+
+/* SNS */
+#sns .container{ 
+  text-align: center;
+  box-sizing: content-box;
+  overflow: hidden;
+  padding-bottom: 100px;
+}
+#sns ul li{
+  width: 240px;
+  float: left;
+}
+
+/* post(글) 섹션 */
+#post .container{ 
+  box-sizing: content-box;
+  overflow: hidden;
+  padding-bottom: 100px;
+}
+#post article:first-child{
+  width: 590px;
+  background: #ccc;
+  float: left;
+  margin-right: 20px;  
+}
+#post article:last-child{
+  width: 590px;
+  background: #ccc;
+  float: left; 
+}
+#post .btn-more{ 
+  display: block;
+  margin-top: 1em;
 }
