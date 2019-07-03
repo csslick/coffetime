@@ -72,6 +72,15 @@ p{
   color: rgba(255,255,255, 0.8);
 }
 
+/* 검색창 액션 - focus시 창이 열림 */
+#main-menu #s{
+  width: 0;
+  opacity: 0;
+}
+#main-menu #s:focus{
+  width: 10em;
+  opacity: 1;
+}
 
 /* 메인 비주얼 */
 #main-visual{
