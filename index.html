@@ -118,10 +118,17 @@
               var img_url = contents[i].img_url;
               var title = contents[i].title;
               var text = contents[i].text;
-              console.log(img_url, title, text);
+              var sub_text = text;  // 문자길이 한도 버퍼
+              
+              if(text.length > 120){
+                sub_text = text.substring(0, 120) + '...'; // 문자열 중략
+              } 
+              // console.log(img_url, title, text);
+              // console.log('text length= ', sub_text.length);
               var html = '<img src="' + img_url + '">';
+
               html += '<h2>' + title + '</h2>';
-              html += '<p>' + text + '</p>';
+              html += '<p>' + sub_text + '</p>';
               $('#post .container').append('<article/>');
               $('#post article').eq(i).append(html);
               $('#post article').eq(i).append('<a href="#" class="btn-more">더보기</a>');
