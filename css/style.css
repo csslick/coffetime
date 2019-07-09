@@ -217,13 +217,14 @@ p{
   overflow: hidden;
   padding-bottom: 100px;
 }
-#post article:first-child{
+#post article{ margin-bottom: 100px;}
+#post article:nth-child(odd){
   width: 590px;
   background: #fff;
   float: left;
   margin-right: 20px;  
 }
-#post article:last-child{
+#post article:last-child:(even){
   width: 590px;
   background: #fff;
   float: left; 

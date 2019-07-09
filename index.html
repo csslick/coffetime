@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="css/style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src='js/main.js'></script>
+  <script src="data/data.js"></script>
 </head>
 
 <body>
@@ -109,21 +110,24 @@
 
     <section id="post">
       <div class="container">
-        <article>
-          <img src="http://placeimg.com/590/400/NATURE" alt="">
-          <h2>은은한 커피향을 마시며</h2>
-          <p>따뜻한 내려온 충분히 있는 있다. 청춘은 피어나기 얼마나 부패뿐이다. 천지는 몸이 역사를 이상의 있는가? 봄바람을 가장 천자만홍이 이 그것은 바로 보라. 크고 노년에게서 방지하는 못할 시들어
-            철환하였는가? 목숨이 그들을 청춘은 않는 타오르고 것은 사막이다.</p>
-          <a href="#" class="btn-more">더보기</a>
-        </article>
-        <article>
-          <img src="http://placeimg.com/590/400/SEPIA" alt="">
-          <h2>어둠같이 파고드는 커피의 진한 내음에 취하다...</h2>
-          <p>따뜻한 내려온 충분히 있는 있다. 청춘은 피어나기 얼마나 부패뿐이다. 천지는 몸이 역사를 이상의 있는가? 봄바람을 가장 천자만홍이 이 그것은 바로 보라. 크고 노년에게서 방지하는 못할 시들어
-            철환하였는가? 목숨이 그들을 청춘은 않는 타오르고 것은 사막이다.</p>
-          <a href="#" class="btn-more">더보기</a>
-        </article>
       </div><!-- end container -->
+      <script>
+          $(function () {
+            var contents = my_data.post;
+            for (var i in contents) {
+              var img_url = contents[i].img_url;
+              var title = contents[i].title;
+              var text = contents[i].text;
+              console.log(img_url, title, text);
+              var html = '<img src="' + img_url + '">';
+              html += '<h2>' + title + '</h2>';
+              html += '<p>' + text + '</p>';
+              $('#post .container').append('<article/>');
+              $('#post article').eq(i).append(html);
+              $('#post article').eq(i).append('<a href="#" class="btn-more">더보기</a>');
+            }
+          });  
+        </script>
     </section>
   </div><!-- end main -->
 
